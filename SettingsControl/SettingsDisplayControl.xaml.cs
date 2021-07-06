@@ -69,7 +69,7 @@ namespace SettingsControl
 
         private void MainPanel_SizeChanged(object sender, SizeChangedEventArgs e)
         {
-            if (e.NewSize.Width == e.PreviousSize.Width)
+            if (e.NewSize.Width == e.PreviousSize.Width || ActionableElement == null)
                 return;
 
             if (ActionableElement.ActualWidth > e.NewSize.Width / 3)
