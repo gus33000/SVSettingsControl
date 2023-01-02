@@ -81,12 +81,24 @@ namespace SettingsControl
           new PropertyMetadata(false)
         );
 
+        public static readonly DependencyProperty IsExpandedProperty = DependencyProperty.Register(
+            "IsExpanded",
+            typeof(bool),
+            typeof(SettingsBlockControl),
+            new PropertyMetadata(false)
+        );
+
         public bool IsClickable
         {
             get => (bool)GetValue(IsClickableProperty);
             set => SetValue(IsClickableProperty, value);
         }
 
+        public bool IsExpanded
+        {
+            get => (bool)GetValue(IsExpandedProperty);
+            set => SetValue(IsExpandedProperty, value);
+        }
         //
         // Summary:
         //     Occurs when a button control is clicked.

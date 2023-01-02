@@ -37,5 +37,17 @@
             </local:SettingsBlockControl.Icon>
             <ToggleButton Content="wewaaaaaaaaaaaaaaaaaaaa"/>
         </local:SettingsBlockControl>
+
+        <local:SettingsBlockControl Title="Test yay!" Description="This is some short description of this setting 4." IsExpanded="True">
+            <local:SettingsBlockControl.Icon>
+                <SymbolIcon Symbol="Permissions"/>
+            </local:SettingsBlockControl.Icon>
+            <local:SettingsBlockControl.ExpandableContent>
+                <Grid Margin="16">
+                    <TextBlock Text="I am expanded by default" />
+                </Grid>
+            </local:SettingsBlockControl.ExpandableContent>
+            <ToggleButton Content="wew"/>
+        </local:SettingsBlockControl>
     </StackPanel>
 </Page>
